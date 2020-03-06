@@ -6,6 +6,7 @@ import slugify from 'slugify';
 import Cart from './Components/Cart'
 import './App.css';
 import Header from'./Components/Header'
+import Customize from './Components/Customize'
 
 // This object will allow us to
 // easily convert numbers into US dollar values
@@ -44,7 +45,7 @@ class App extends Component {
     });
   };
 
-  render() {
+  render() { 
     const features = Object.keys(this.props.features).map((feature, idx) => {
       const featureHash = feature + '-' + idx;
       const options = this.props.features[feature].map(item => {
@@ -100,10 +101,11 @@ class App extends Component {
       <div className="App">
         <Header />
         <main>
-          <form className="main__form">
+          <Customize features={features}/>
+          {/* <form className="main__form">
             <h2>Customize your laptop</h2>
             {features}
-          </form>
+          </form> */}
             <Cart total={total} summary={summary} currency={USCurrencyFormat}/>
         </main>
       </div>

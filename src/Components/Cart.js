@@ -3,7 +3,6 @@ import Total from './Total'
 
 
 export default function Cart(props){
-  console.log(props)
   return (
     <section className="main__summary">
       <h2>Your cart</h2>

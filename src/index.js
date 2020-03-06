@@ -7,7 +7,7 @@ const FEATURES = {
   Processor: [
     {
       name: '17th Generation Intel Core HB (7 Core with donut spare)',
-      cost: 700
+      cost: 7001
     },
     {
       name: 'Professor X AMD Fire Breather with sidewinder technology',
